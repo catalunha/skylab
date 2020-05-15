@@ -12,15 +12,27 @@
       // Masculino e Feminino
       // == compara apenas valor
       // === compara valor e tipo
-      if (sexo === 'M') {
-        return 'Masculino'
-      } else if (sexo === 'F') {
-        return 'Feminino'
-      } else {
-        return 'Outro'
+      // if (sexo === 'M') {
+      //   return 'Masculino'
+      // } else if (sexo === 'F') {
+      //   return 'Feminino'
+      // } else {
+      //   return 'Outro'
+      // }
+      switch (sexo) {
+        case 'M':
+          return 'Masculino'
+          break;
+        case 'F':
+          return 'Feminino'
+          break
+        default:
+          return 'Outro'
+          break;
       }
+
     }
-    var resultado = retornaSexo('M')
+    var resultado = retornaSexo('F')
     console.log(resultado)
   </script>
 </body>
