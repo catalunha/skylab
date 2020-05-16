@@ -6,6 +6,8 @@
 
 <body>
   <div id='app'>
+    <input type="text" name="nome">
+    <button onclick="adicionar()">Adicionar</button>
     <ul id="lista">
 
     </ul>
@@ -13,13 +15,22 @@
   </div>
   <script>
     var ulEl = document.querySelector('#lista')
-    var nomes=['a','b','c']
-    for(let nome of nomes){
+    var nomes = ['a', 'b', 'c']
+    for (let nome of nomes) {
 
-    liEl = document.createElement('li')
-    text = document.createTextNode(nome)
-    liEl.appendChild(text)
-    ulEl.appendChild(liEl)
+      liEl = document.createElement('li')
+      text = document.createTextNode(nome)
+      liEl.appendChild(text)
+      ulEl.appendChild(liEl)
+    }
+    function adicionar() {
+      nomeElInput = document.querySelector('input[name=nome]')
+      console.log(nomeElInput.value)
+      liEl = document.createElement('li')
+      text = document.createTextNode(nomeElInput.value)
+      liEl.appendChild(text)
+      ulEl.appendChild(liEl)
+      nomeElInput.value=''
     }
   </script>
 </body>
