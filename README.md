@@ -12,3 +12,4 @@ Skylab RocketSeat - Cursos
 * functions
 * condicionais
 * Op Log
+* Cond ternaria

@@ -7,21 +7,14 @@
 <body>
 
   <script>
-    //AND OR NOT
-    var letra = 'a', pos = 1
-    if (letra === 'a' && pos === 1) {
-      console.log('Ok a 1')
+    var letra = 'a'
+    if (letra === 'a') {
+      console.log('Masc')
+    } else {
+      console.log('Fem')
     }
-    letra = 'b'
-    pos = 1
-    if (letra === 'a' || pos === 1) {
-      console.log('Ok b 2')
-    }
-    if (pos !== 2) {
-      console.log('pos é diferente de 2')
-    }
-    var posCorretaA = (pos === 1)
-    console.log(posCorretaA)
+    var res = letra === 'a' ? 'Masc' : 'Fem'
+      console.log(res)
   </script>
 </body>
 
