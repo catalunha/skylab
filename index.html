@@ -6,14 +6,29 @@
 
 <body>
   <div id='app'>
-    <div class='box'></div>
+    <button onclick="criarQuadrado()">Criar quadrado</button>
+
   </div>
   <script>
-var boxEl=document.querySelector('.box')
-boxEl.style.width=100
-boxEl.style.height=100
-boxEl.style.backgroundColor='#f00'
-
+    var containerEl = document.querySelector('#app')
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF'
+      var color = '#'
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)]
+      }
+      return color
+    }
+    function criarQuadrado() {
+      var boxEl = document.createElement('div')
+      boxEl.style.width = 100
+      boxEl.style.height = 100
+      boxEl.style.backgroundColor = '#f00'
+      containerEl.append(boxEl)
+      boxEl.onmouseover = function () {
+        boxEl.style.backgroundColor = getRandomColor()
+      }
+    }
   </script>
 </body>
 
