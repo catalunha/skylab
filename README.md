@@ -14,3 +14,4 @@ Skylab RocketSeat - Cursos
 * Op Log
 * Cond ternaria
 * repeticao
+* setInterval e setTimeout
