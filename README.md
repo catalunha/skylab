@@ -20,3 +20,4 @@ Skylab RocketSeat - Cursos
 ### Manipulando a DOM
 * event inline
 * trab com a DOM
+* lidando com elementos
