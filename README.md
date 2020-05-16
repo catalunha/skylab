@@ -18,3 +18,5 @@ Skylab RocketSeat - Cursos
 * Desafio
 
 ### Manipulando a DOM
+* event inline
+* trab com a DOM
