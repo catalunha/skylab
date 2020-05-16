@@ -13,3 +13,4 @@ Skylab RocketSeat - Cursos
 * condicionais
 * Op Log
 * Cond ternaria
+* repeticao
