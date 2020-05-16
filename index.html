@@ -6,28 +6,20 @@
 
 <body>
   <div id='app'>
-    <button onclick="criarQuadrado()">Criar quadrado</button>
+    <ul id="lista">
+
+    </ul>
 
   </div>
   <script>
-    var containerEl = document.querySelector('#app')
-    function getRandomColor() {
-      var letters = '0123456789ABCDEF'
-      var color = '#'
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)]
-      }
-      return color
-    }
-    function criarQuadrado() {
-      var boxEl = document.createElement('div')
-      boxEl.style.width = 100
-      boxEl.style.height = 100
-      boxEl.style.backgroundColor = '#f00'
-      containerEl.appendChild(boxEl)
-      boxEl.onmouseover = function () {
-        boxEl.style.backgroundColor = getRandomColor()
-      }
+    var ulEl = document.querySelector('#lista')
+    var nomes=['a','b','c']
+    for(let nome of nomes){
+
+    liEl = document.createElement('li')
+    text = document.createTextNode(nome)
+    liEl.appendChild(text)
+    ulEl.appendChild(liEl)
     }
   </script>
 </body>
