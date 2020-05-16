@@ -15,3 +15,6 @@ Skylab RocketSeat - Cursos
 * Cond ternaria
 * repeticao
 * setInterval e setTimeout
+* Desafio
+
+### Manipulando a DOM
