@@ -21,3 +21,4 @@ Skylab RocketSeat - Cursos
 * event inline
 * trab com a DOM
 * lidando com elementos
+* alterando estilos
