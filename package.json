@@ -1,0 +1,19 @@
+{
+  "name": "skylab",
+  "version": "1.0.0",
+  "description": "curso es do skylab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catalunha/skylab.git"
+  },
+  "author": "Catalunha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catalunha/skylab/issues"
+  },
+  "homepage": "https://github.com/catalunha/skylab#readme"
+}
