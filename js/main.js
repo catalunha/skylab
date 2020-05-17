@@ -1,17 +1,22 @@
-// const a=1
-// a=3
+const arr = [1, 3, 4, 5, 8, 9]
+const newArr = arr.map((item) => {
+  return item * 2
+})
+console.log(newArr)
 
+const sumArr = arr.reduce((total, next) => {
+  return total + next
+})
 
-// const usuario = { nome:'a'}
-// usuario.nome = 'b'
-// console.log(usuario.nome)
+console.log(sumArr)
 
-function teste(x) {
-  let y = 2
-  if (x > 5) {
-    y=4
-    console.log(x, y)
-  }
-}
-// console.log(y)
-teste(10)
+const filterArr = arr.filter((item) => {
+  return item % 2 === 0
+})
+
+console.log(filterArr)
+
+const findArr = arr.find((item) => {
+  return item === 4
+})
+console.log(findArr)
