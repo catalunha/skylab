@@ -4,16 +4,15 @@
   "description": "curso es do skylab",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel": "babel js/main.js -o build/main.bundle.js -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/catalunha/skylab.git"
   },
-  "author": "Catalunha",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/catalunha/skylab/issues"
-  },
-  "homepage": "https://github.com/catalunha/skylab#readme"
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
+  }
 }
