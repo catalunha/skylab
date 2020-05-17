@@ -1,29 +1,38 @@
+//usando Rest
 const usuario = {
   nome: 'Diego',
   idade: 23,
-  endereco: {
-    cidade: 'Rio do sul',
-    estado: "SC"
-  }
+  empresa: 'Rocketseat'
 }
 
-// const nome = usuario.nome
-// const idade = usuario.idade
-// const cidade = usuario.endereco.cidade
-
-const { nome, idade, endereco: { cidade } } = usuario
-
-console.log(nome)
-console.log(idade)
-console.log(cidade)
+// const { nome, ...resto } = usuario
+// console.log(nome)
+// console.log(resto)
 
 
-function mostraNome(usuario) {
-  console.log(usuario.nome)
+const arr = [1, 2, 3, 4]
+
+const [a, b, ...c] = arr
+console.log(a)
+console.log(b)
+console.log(c)
+
+
+function soma(...params) {
+  return params
 }
-mostraNome(usuario)
+console.log(soma(10, 20, 30))
 
-function mostraNome2({nome}) {
-  console.log(nome)
-}
-mostraNome2(usuario)
+// usando spread
+
+const arr1 = [1, 2, 3]
+const arr2 = [4, 5, 6]
+const arr3 = [...arr1, ...arr2]
+console.log(arr3)
+
+const usuario2 = { ...usuario, nome: 'catalunha' }
+console.log(usuario2)
+const usuario3 = { ...usuario, cidade: 'Palmas' }
+console.log(usuario3)
+const {nome,...usuario5} = { ...usuario, cidade: 'Palmas' }
+console.log(usuario5)
