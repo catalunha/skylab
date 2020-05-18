@@ -1,6 +1,18 @@
-module.exports={
-  entry:'./js/main.js',
-  output:{
-    .
-  }
+module.exports = {
+  entry: './js/main.js',
+  output: {
+    path: __dirname,
+    filename: './build/main.bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use:{
+          loader:'babel-loader',
+        },
+      }
+    ],
+  },
 }
