@@ -4,7 +4,8 @@
   "description": "curso es do skylab",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --mode=development -w"
+    "webpackDev": "webpack-dev-server --mode=development",
+    "webpackProd": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,8 @@
     "@babel/preset-env": "^7.9.6",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
